@@ -22,12 +22,12 @@ tb = uitoolbar('Parent',fig);
 % get open icon png & convert to use in toolbar
 
 path = strrep(mfilename('fullpath'),strcat('\',mfilename),'');
-[img_open,~,alpha] = imread(fullfile(path,'AVA_GUI','file_open.png'));
+[img_open,~,alpha] = imread(fullfile(path,'file_open.png'));
 openIcon = double(img_open)/256/256;
 openIcon(~alpha) = NaN;
   
 % get save icon png & convert to use in toolbar
-[img_save,~,alpha] = imread(fullfile(path,'AVA_GUI','file_save.png'));
+[img_save,~,alpha] = imread(fullfile(path,'file_save.png'));
 saveIcon = double(img_save)/256/256;
 saveIcon(~alpha) = NaN;
   
